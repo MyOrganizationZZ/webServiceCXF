@@ -175,7 +175,7 @@ An error occurred while filtering resources	java_first_jaxws		line 1	Maven Java 
                                     <systemProperties>
                                         <systemProperty>
                                             <name>message</name>
-                                            <value>[Add Version to git]</value>
+                                            <value>[New changes]</value>
                                         </systemProperty>
                                     </systemProperties>
                                 </configuration>

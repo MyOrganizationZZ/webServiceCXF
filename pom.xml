@@ -95,9 +95,18 @@ An error occurred while filtering resources	java_first_jaxws		line 1	Maven Java 
     <project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
     <archetype.encoding>UTF-8</archetype.encoding>
         
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <projectVersion>${project.version}</projectVersion>
         
  </properties>  
   
+  
+    <scm>
+        <connection>scm:git:https://github.com/MyOrganizationZZ/webServiceCXF.git</connection>
+        <developerConnection>scm:git:https://github.com/MyOrganizationZZ/webServiceCXF.git</developerConnection>
+        <url>https://github.com/MyOrganizationZZ/webServiceCXF.git</url>
+    </scm>
 <!-- 
 <build>
        <plugins>
@@ -136,11 +145,43 @@ An error occurred while filtering resources	java_first_jaxws		line 1	Maven Java 
                 </configuration>
                 
             </plugin>
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat6-maven-plugin</artifactId>
-                <version>2.1</version>
-            </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-scm-plugin</artifactId>
+                        <version>1.8.1</version>
+                        <configuration>
+				            <username>angelfloresp@gmail.com</username>
+				            <password>Afp10121975</password>                        
+                            <message>Add version files to git</message>
+                            <systemProperties>
+                                <systemProperty>
+                                    <name>message</name>
+                                    <value>[Add Version to git]</value>
+                                </systemProperty>
+                            </systemProperties>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>add-version-to-git</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>add</goal>
+                                    <goal>checkin</goal>
+                                </goals>
+                                <configuration>
+                                    <basedir>./</basedir>
+                                    <includes>myTest.xml</includes>
+                                    <systemProperties>
+                                        <systemProperty>
+                                            <name>message</name>
+                                            <value>[Add Version to git]</value>
+                                        </systemProperty>
+                                    </systemProperties>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
             
         </plugins>
         <finalName>JavaFirstSpringSupport</finalName>

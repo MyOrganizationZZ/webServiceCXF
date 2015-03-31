@@ -157,7 +157,7 @@ An error occurred while filtering resources	java_first_jaxws		line 1	Maven Java 
                             <systemProperties>
                                 <systemProperty>
                                     <name>message</name>
-                                    <value>[Add Version to git]</value>
+                                    <value>[new Changes 2]</value>
                                 </systemProperty>
                             </systemProperties>
                         </configuration>
@@ -171,7 +171,7 @@ An error occurred while filtering resources	java_first_jaxws		line 1	Maven Java 
                                 </goals>
                                 <configuration>
                                     <basedir>./</basedir>
-                                    <includes>myAFP.xml</includes>
+                                    <includes>*.xml</includes>
                                     <systemProperties>
                                         <systemProperty>
                                             <name>message</name>

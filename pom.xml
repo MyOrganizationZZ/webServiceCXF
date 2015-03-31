@@ -151,7 +151,7 @@ An error occurred while filtering resources	java_first_jaxws		line 1	Maven Java 
                         <artifactId>maven-scm-plugin</artifactId>
                         <version>1.8.1</version>
                         <configuration>
-				            <username>angelfloresp@gmail.com</username>
+				            <username>alcongalactico</username>
 				            <password>Afp10121975</password>                        
                             <message>Add version files to git</message>
                             <systemProperties>

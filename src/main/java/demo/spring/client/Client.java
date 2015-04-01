@@ -9,6 +9,7 @@ import demo.spring.service.HelloWorld;
 public final class Client {
 
     private Client() {
+    	System.out.println("Hello world");
     }
 
     public static void main(String args[]) throws Exception {

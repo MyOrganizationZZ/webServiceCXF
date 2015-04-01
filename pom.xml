@@ -157,7 +157,7 @@ An error occurred while filtering resources	java_first_jaxws		line 1	Maven Java 
                 <outputDirectory>${project.build.directory}/target</outputDirectory> <!-- matches distribution management repository url above -->
                 <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
                 <includes><include>**/*</include></includes>
-                <repositoryName>webServiceCXF</repositoryName>      <!-- github repo name -->
+                <repositoryName>myRepoName</repositoryName>      <!-- github repo name -->
                 <repositoryOwner>alcongalactico</repositoryOwner>    <!-- github username  -->
             </configuration>
             <executions>
@@ -211,6 +211,20 @@ An error occurred while filtering resources	java_first_jaxws		line 1	Maven Java 
         </plugins>
         <finalName>JavaFirstSpringSupport</finalName>
     </build>
+    
+    
+<repositories>
+        <repository>
+              <id>repository.springframework.maven.release</id>
+              <name>Spring Framework Maven Release Repository</name>
+              <url>http://maven.springframework.org/release</url>
+        </repository>
+        <repository>
+              <id>myRepoName</id>
+              <name>myRepoName</name>
+              <url>https://github.com/MyOrganizationZZ/webServiceCXF.git</url>
+        </repository>
+  </repositories>    
     <profiles>
         <profile>
             <id>server</id>

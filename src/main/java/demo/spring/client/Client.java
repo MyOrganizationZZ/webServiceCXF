@@ -8,8 +8,10 @@ import demo.spring.service.HelloWorld;
 
 public final class Client {
 
+	
+	
     private Client() {
-    	System.out.println("Hello world");
+    	System.out.println("Hello world 3");
     }
 
     public static void main(String args[]) throws Exception {

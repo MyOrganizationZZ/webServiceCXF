@@ -9,7 +9,7 @@ public class HelloWorldImpl implements HelloWorld {
 
 	@WebMethod(operationName="decirHola otra cosa")
     public String sayHi(String text) {
-        System.out.println("sayHi called");
+        System.out.println("sayHi called angel");
         return "Hello " + text;
     }
 }

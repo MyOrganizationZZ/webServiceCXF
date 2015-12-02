@@ -7,9 +7,9 @@ import javax.jws.WebService;
 @WebService(endpointInterface = "demo.spring.service.HelloWorld")
 public class HelloWorldImpl implements HelloWorld {
 
-	@WebMethod(operationName="decirHola otra cosa")
+	@WebMethod(operationName="decirHola")
     public String sayHi(String text) {
-        System.out.println("sayHi called angel");
+        System.out.println("sayHi called angel flores");
         return "Hello " + text;
     }
 }
